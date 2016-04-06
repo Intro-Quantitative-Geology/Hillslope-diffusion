@@ -19,7 +19,7 @@ The preferences in **Spyder** can be fixed by doing the following:
 The preferences should now be working.
 
 ## Changing plot preferences to appear in separate window
-- Open Spyder Preferences
-- Select IPython console from list on left, then click on the Graphics tab
-- Change Backend to Automatic
-- Close and re-open Spyder
+1. Open the **Spyder** Preferences by going to `Tools` and selecting `Preferences` in the **Spyder** menubar.
+2. In the Preferences window, select **IPython console** from list on left, then click on the **Graphics** tab.
+3. Change the value listed for **Backend** to `Automatic`.
+4. Close the preferences window, exit **Spyder** and open **Spyder** again. New plots should now appear in a separate window.

@@ -35,10 +35,10 @@ So, what happened? Previously, we had our text in quotation marks (`"The value o
 ```
 where `<key>` refers to the position of an item in the list of values to be formatted (`0` if there is only one value), `<format options>` are the specifications for how to display the text, and `<value>` is the value you want to display. In our case, we specify we want the first floating point value (`0`) to be displayed with seven decimal places `{0:.7f}`. In this case, the number after the period is the number of decimal places to show and the "`f`" will display the text as a typical floating point number. Perhaps this is easier to understand with a second example for two numbers.
 ```python
->>> print("The value of pi is approximately {0:.7f}, which is a good approximation of {1:.36f}".format(355.0/113.0, np.pi))
-The value of pi is approximately 3.1415929, which is a good approximation of 3.141592653589793115997963468544185162
+>>> print("Pi is approximately {0:.7f}, a good approximation of {1:.36f}".format(355.0/113.0, np.pi))
+Pi is approximately 3.1415929, a good approximation of 3.141592653589793115997963468544185162
 ```
-Now we have our approximation (value `0`) displayed with 7 digits after the decimal point and the value of pi from the NumPy library (value `1`) displayed with 36 digits after the decimal place. In the format string we simply use commas to list the values in the order they are given in the text to be displayed. In cases where you have only one value to format, you can even omit the `0`. In this way we could alternatively display the approximate value of pi in scientific notation by deleting the `0` key and replacing the "`f`" with an "`e`".
+Now we have our approximation (key `0`) displayed with 7 digits after the decimal point and the value of pi from the NumPy library (key `1`) displayed with 36 digits after the decimal place. In the format string we simply use commas to list the values in the order they are given in the text to be displayed. In cases where you have only one value to format, you can even omit the key. In this way we could alternatively display the approximate value of pi in scientific notation by deleting the `0` key and replacing the "`f`" with an "`e`".
 ```python
 >>> print("The value of pi is approximately {:.7e}".format(355.0/113.0))
 The value of pi is approximately 3.1415929e+00 

@@ -5,6 +5,7 @@ This week's exercise applies the diffusion equation to model the geometry of hil
 1. [Mid-term course feedback](https://elomake.helsinki.fi/lomakkeet/69827/lomake.html)
 2. [Laboratory exercise 3](https://classroom.github.com/assignment-invitations/5c0585462586887fa9634099ed38036b)
 3. [Better plotting in Spyder](Fixing-Spyder.md)
+4. [Formatting strings in Python](Format-Python-strings.md)
 
 ## Resources
 - Web pages
